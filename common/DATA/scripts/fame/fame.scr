@@ -1,0 +1,30 @@
+sprite fame 320 150 0 0 famelogo.pic 320 200
+sprite plusha 32 32 0 168 famelogo.pic 320 200
+sprite plusha_s 32 32 192 168 famelogo.pic 320 200
+sprite plusha_up 32 32 224 168 famelogo.pic 320 200
+;sprite ects 62 50 258 150 famelogo.pic 320 200
+background 15
+animate plusha 6 32 0 4
+set fame 0 25
+set plusha -40 160
+;set ects 320 -50
+render
+on
+move plusha 148 160 5
+;move ects 257 1 2
+wait 2
+while plusha
+swap plusha plusha_s
+wait 5
+swap plusha_s plusha_up
+wait 5
+move fame 0 5 1
+se 22
+wait 5
+swap plusha_up plusha_s
+wait 1
+swap plusha_s plusha
+move plusha 320 160 5
+wait 10
+while plusha
+q

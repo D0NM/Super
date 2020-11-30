@@ -1,0 +1,104 @@
+picture stars.pic 320 200
+picture nebo.pic 320 200
+sprite planeta 320 147 0 53 planet.pic 320 200
+sprite earth1 80 80 0 120 planet2.pic 320 200
+sprite earth2 72 72 80 120 planet2.pic 320 200
+sprite earth3 64 64 152 120 planet2.pic 320 200
+sprite kuski 16 16 168 184 planet2.pic 320 200
+sprite kuski2 16 16 184 184 planet2.pic 320 200
+sprite kuski3 16 16 200 184 planet2.pic 320 200
+sprite big_ufo 384 136 0 0 big_ufo.bin 384 136
+sprite tarelka_s 104 40 0 80 planet2.pic 320 200
+sprite tarelka_r 105 78 0 0 planet2.pic 320 200
+sprite tarelka_c 105 78 107 0 planet2.pic 320 200
+sprite tarelka_l 105 78 215 0 planet2.pic 320 200
+sprite alien1 44 54 216 78 planet2.pic 320 200
+sprite alien2 44 54 216 132 planet2.pic 320 200
+background stars.pic 10 20
+fx tarelka_r flow 5 5 10
+set earth3 -30 0
+set tarelka_s -240 84
+fx tarelka_s flow 5 5 2
+animate tarelka_s 2 104 0 3
+mod alien.fms
+render
+on
+move earth3 330 125 5
+move tarelka_s 330 120 7
+wait 10
+text 15 70 ;somewhere in the galaxy
+wait 10
+swap earth3 earth2
+wait 20
+swap earth2 earth1
+while earth1
+render
+hide tarelka_s
+background stars.pic 1 0
+set tarelka_r -106 20
+set big_ufo -200 0
+move tarelka_r 120 60 2
+set planeta 0 200
+move big_ufo 280 -120 4
+render
+wait 50 
+swap tarelka_r tarelka_c
+fx tarelka_c shake 3 1 1
+wait 10
+move planeta 0 53 1
+while tarelka_c
+text ;clear
+se 25
+fx tarelka_c shake 5 2 0
+set kuski 150 80
+move kuski 50 210 3
+se 8
+wait 10
+set alien2 151 51
+glue tarelka_c alien2
+set kuski2 156 80
+fx kuski2 flow 5 5 10
+move kuski2 146 210 4
+se 8
+animate alien1 2 44 0 5
+text 96 71 ;what happened?
+animate alien2 2 44 0 9
+swap alien2 alien1
+wait 20
+set kuski3 160 80
+fx kuski3 flow 5 5 4
+move kuski3 300 210 5
+se 8
+swap alien1 alien2
+wait 10
+text ;clear
+se 26
+wait 15
+hide alien2
+swap tarelka_c tarelka_l
+fx tarelka_l flow 16 4 5
+;тарелка идет вниз
+move tarelka_l 30 220 5
+while tarelka_l
+render
+hide tarelka_l
+hide planeta
+set kuski 67 -40
+set kuski2 150 -30
+set kuski3 256 -20
+set tarelka_c 108 -200
+fx tarelka_c flow 30 10 17
+background nebo.pic 0 -15
+move tarelka_c 108 120 7
+move kuski 50 220 11
+move kuski2 160 220 13
+move kuski3 277 220 15
+se 8
+render
+while tarelka_c
+move tarelka_c 108 -100 6
+background nebo.pic 0 -11
+wait 20
+background nebo.pic 0 -7
+wait 20
+q

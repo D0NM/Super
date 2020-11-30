@@ -1,0 +1,83 @@
+새 게임 시작하기
+기존 게임 이어하기
+언어 선택
+게임 종료 후 GP32 리셋
+게임으로 돌아가기
+게임 저장 후 메인 메뉴로 돌아가기
+메인 메뉴로 돌아가기
+일시 정지
+세이브는 [A] 버튼, 취소는 [B] 버튼
+기존의 게임을 덮어쓰겠습니까?
+감사합니다!
+더 많은 레벨을 즐기기 위해서는#Super Plusha 정품을 구매해 주십시오; it's too long?? altenation - Super Plusha 정품을 기대하세요
+시간이 다 되었습니다!
+꿀이 떨어졌습니다!
+아야!
+출구가 열렸습니다!
+이 단계의 보스
+찰칵!
+콰직!
+위험했어요!
+체크 포인트...
+CONE	; super items in the shop 18 chars max name/35 chars description
+상대방에게 던집니다
+HONEY
+체력을 회복합니다
+EXTRA TIME
+시간을 늘려 줍니다
+LIFE
+생명을 늘려 줍니다
+CONTINUE / SAVE
+저장이 가능하도록 합니다
+SUPER POWER
+슈퍼 아이템을 위한 에너지를 제공
+SUPER SHIELD
+슈퍼 파워를 이용해서 자신을 보호
+SUPER LENS
+숨겨진 장소나 아이템을 찾아냄
+SUPER JUMP
+더 높게 점프 할수 있습니다
+SPIKY BOOTS
+점프해서 상대방을 죽일수 있습니다
+SUPER CRUSHER
+점프해서 블록을 파괴할수 있습니다
+SUPER JET
+하늘을 날라 다닐 수 있습니다
+구입은 [A] 버튼, 종료는 [B] 버튼
+이미 그 아이템을 가지고 있습니다
+돈이 모자라는군요
+그런 아이템은 없습니다
+;
+SPOILED PICNIC;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+CURSED HILLS
+DARK DUNGEON
+GIANT FOREST
+TUKKI'S ESCAPE
+DEADLY ICE
+EVIL UFO
+BONUS LEVEL
+;
+;
+The search for Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Let's save the hills
+Dungeon deeply digged#under the mountains
+Never ending Forest
+Tukki's escape from the aliens
+Sliding Ice
+Let's save Tukki & Kuzya
+Enter Bonus Level
+;
+;comics lines:...
+Somewhere in Solar system...;70
+???: What's happened?
+Kuzya: He-He-He
+Kuzya: Ouch!
+Tukki: Help me!
+Tukki: No-ooo!
+Plusha: Yummy!
+Snail: Thanks!
+Snail: This map will help you
+Plusha: I think it was the wrong map
+Bird: Thank you! I'm free!
+Bird: I know a short cut
+Plusha: Do you know another short cut?

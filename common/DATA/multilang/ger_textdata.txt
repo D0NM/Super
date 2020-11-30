@@ -1,0 +1,100 @@
+Starte Neues Spiel
+Lade Gesichertes Spiel
+Sprachauswahl
+Beende Spiel und Starte GP32 neu
+Zurueck zum Spiel
+Spiel Sichern und zurueck zum Hauptmenue
+Zurueck zum Hauptmenue
+Spiel Pause
+Druecke [A] zum Sichern,#[B] zum Abbrechen
+Spielstand ueberschreiben?
+Danke fuers Spielen!
+Buy Super Plusha for more levels;11
+Zeit ist abgelaufen!
+Honig ist alle!
+Autsch!
+Ausgang ist offen!
+Der Boss des Levels
+Klick!
+Crack!
+Es war gefaehrlich!
+Check Point...
+ZAPFEN	;super items in the shop 18 chars max name/35 chars description
+Werfe ihn auf deine Gegner
+HONIG
+Stellt deine Energie her
+ZEIT BONUS
+Gibt dir mehr Zeit
+LEBEN
+Gibt 1 dir extra Leben
+WEITER / SICHERN
+Weiter spielen oder Speichern
+SUPER POWER
+Gibt mehr Energie fuer einige Super#Items
+SUPER SHILD
+Schuetzt dich mit SUPER POWER
+SUPER LINSE
+Zeigt einige Geheimnisse und verste-#ckte Items
+SUPER SPRUNG
+Vergroessert deine Sprung hoehe
+DORNEN STIEFEL
+Besiegt Gegner wenn du auf sie#springst
+SUPER CRUSHER
+Zerstoert Bloecke wenn du drauf#springst
+SUPER JET
+Laesst dich hoch fliegen mit SUPER#POWER
+Druecke [A] zum kaufen,#[B] zum verlassen des Shops
+Dieses Item hast du bereits
+Du hast nicht genug Geld
+Hier ist kein Item
+;
+VERDORBENES# PICKNICK;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+VERFLUCHTE HUEGEL
+DUNKLER KERKER
+RIESEN WALD
+TUKKI'S FLUCHT
+EIS DES TODES
+UFO DES BOESEN
+BONUS LEVEL
+;
+;
+Die Suche nach Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Sichere die Huegel
+Tiefer Kerker unter den Bergen
+Unendlicher Wald
+Tukki's flucht von den Aliens
+Rutschtige Eisgletscher
+Rette Tukki & Kuzya
+Betrete Bonus Level
+;
+;comics lines:...
+Irgendwo im Sonnensystem...;70
+???: Was ist passiert?
+Kuzya: He-He-He
+Kuzya: Autsch!
+Tukki: Hilfe!
+Tukki: Neii-in!
+Plusha: Yummy!
+Schnecke: Danke !
+Schnecke: Die Landkarte wird dir Helfen
+Plusha: Es ist die falsche Karte...;Ich glaube das ist die falsche Karte
+Vogel: Danke, ich bin frei !
+Vogel: Ich kenne eine Abkuerzung!
+Plusha: Kennst du noch eine Abkuerzung?
+Fledermaus: Danke!
+Fledermaus: Ich zeig dir den ausgang
+Kuzya: wie kletter ich baeume hoch
+Frosch:Danke!
+Frosch:Folge mir!
+Kuzya:Nein!
+Plusha:Ich werde meine Freunde retten
+Wal:Ich bin frei
+Wal:Spring auf meinen Rìcken
+Plusha:Freunde,ich hoff euch geht es gut
+Tukki: Wo ist der Ausgang?;5
+???: Ich komme wieder!;fin
+Tukki: Danke Freunde!
+Wir bleiben immer die besten Freunde!!!
+Plusha: Jungs, ich habe hunger...
+Tukki:Lasst uns das Picknick fortsetzen
+Ende.

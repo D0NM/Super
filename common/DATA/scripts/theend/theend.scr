@@ -1,0 +1,163 @@
+;мульт на конец игры Хэппи энд
+picture fnframe1.pic 320 200
+picture fnframe2.pic 384 152
+picture fnframe3.pic 320 200
+picture fnframe4.pic 320 200
+picture fnframe5.pic 320 200
+picture fnframe6.pic 320 200
+
+picture 07bg1.pic 320 200
+picture 07bg2.pic 320 200
+
+picture nebo.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+sprite boss_big 167 176 0 0 fnframe1.pic 320 200
+sprite boss_l1 115 49 183 114 fnframe1.pic 320 200
+sprite boss_fly 97 114 195 0 fnframe1.pic 320 200
+sprite boss_l2 126 37 186 163 fnframe1.pic 320 200
+
+sprite lapa1 75 149 300 0 fnframe2.pic 384 152
+sprite lapa2 138 128 0 24 fnframe2.pic 384 152
+sprite lapa3 158 122 139 30 fnframe2.pic 384 152
+
+sprite ten1 40 13 10 110 fnframe3.pic 320 200
+sprite ten2 40 13 10 110 fnframe3.pic 320 200
+sprite ten3 40 13 10 110 fnframe3.pic 320 200
+sprite plusha 53 94 0 0 fnframe3.pic 320 200
+sprite tukki 46 119 58 0 fnframe3.pic 320 200
+sprite kuzya 58 97 106 0 fnframe3.pic 320 200
+sprite noga1 127 63 0 136 fnframe3.pic 320 200
+sprite noga2 127 63 132 137 fnframe3.pic 320 200
+sprite theend 134 81 186 0 fnframe3.pic 320 200
+
+sprite kit_bok 314 198 1 1 fnframe4.pic 320 200
+
+sprite kit_hvost 232 200 40 0 fnframe6.pic 320 200
+sprite kit_fas 320 200 0 0 fnframe5.pic 320 200
+
+
+mod gloom.fms
+background 116
+
+set boss_big 76 12
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+
+render
+on
+
+;бегство босса
+wait 10
+background 55
+wait 5
+fx boss_big shake 10 10 2
+background 116
+wait 5
+se 25
+swap boss_big boss_fly
+set boss_l1 156 100
+set boss_l2 40 102
+move boss_l1 200 220 5
+move boss_l2 14 220 6
+wait 5
+background 55
+wait 5
+glue boss_fly flash
+background 226
+se 26
+move boss_fly 130 -225 3
+text 96 94 ;????: i'll be back!
+wait 5
+background nebo.pic 0 2
+while boss_fly
+wait 20
+off
+
+;прыгают от радости
+render
+clear
+background 07bg1.pic 0 0
+set plusha 63 42
+set tukki 132 20
+set kuzya 192 42
+set ten1 74 129
+set ten2 135 130
+set ten3 201 131
+animate plusha 2 0 6 6
+animate tukki 2 0 6 4
+animate kuzya 2 0 6 5
+set noga1 50 140
+set noga2 170 145
+fx noga1 shake 3 1 5
+fx noga2 shake 3 1 4
+render
+on
+wait 10
+text 160 95; Tukki: Thank u friends
+wait 70
+
+;лапы - рукопожатие
+render
+clear
+background nebo.pic 1 -1
+set lapa1 116 -150
+set lapa2 -100 200
+set lapa3 280 200
+render
+wait 5
+move lapa1 116 -16 10
+move lapa2 30 78 11
+move lapa3 133 80 12
+text 15 96 ;All: Friends forever!
+while lapa2
+while lapa3
+se 21;power
+wait 70
+
+;на ките
+off
+render
+clear
+background nebo.pic 0 1
+set kit_hvost 44 120
+fx kit_hvost walk 0 20 40
+set kit_fas 0 80
+move kit_hvost 44 40 2
+move kit_fas 0 11 3
+render
+on
+while kit_fas
+fx kit_fas walk 0 10 21
+text 50 97 ;Plusha:i'm hungry
+wait 70
+text ;clear
+wait 20
+
+;на ките плывут в бок
+render
+clear
+background 07bg2.pic -1 0
+set kit_bok -100 60
+move kit_bok 3 40 3
+fx kit_bok walk 1 10 20
+render
+wait 10
+
+;the end
+text 160 98 ;Tukki: let's continue our picnic
+wait 70
+move kit_bok 325 50 3
+wait 10
+text ;clear
+while kit_bok
+wait 10
+text 15 99 ;Author:THE END
+set theend 93 200
+move theend 93 102 1
+while theend
+wait 200
+allow
+wait 1000
+q

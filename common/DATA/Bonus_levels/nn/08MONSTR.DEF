@@ -1,0 +1,17 @@
+TUKKI		24 40	4 9 22	19 9 22		6 16 30		6 16 0	0	tukki.bin	4 4 5 3
+
+WORM_C		16 08	0 8	16 8	8 06	8 0	0 3 1	worm_c.bin 	4 0 0 1
+GrSlim		16 08	0 7	14 7	7 06	7 0	0 3 5	grslim.bin 	4 1 1 0
+-FROG		24 24	0 8	23 8   12 16   12 0	2 2 2	frog.bin 	3 1 0 1
+BOSS5		32 32	0 16	31 18	15 30	15 2	19 4 10	boss5.bin 	3 0 1 0
+ISKRY		16 16	0 8	16 8 	8 16	8 0	0 5 1	enbull.bin 	8 0 0 0
+ISKRY_P		16 16	0 8	16 8 	8 16	8 0	6 1 1	enbull.bin 	8 0 0 0
+-FROG2		24 24	0 8	23 8   12 18   12 0	5 3 2	frog.bin 	3 1 0 1
+-KOLOBOK	24 24	0 8	23 8 	12 23	12 0	0 6 4	kolobok.bin 	4 0 0 0
+CAMERA1		16 16	0 7	15 8 	7 15	7 0	6 1 1 	camera1.bin 	2 0 1 0
+SLIME		16 16	0 8	16 8 	8 16	8 0	1 1 3 	slime.bin 	4 0 1 0
+KOLOBOK		24 24	0 8	23 8 	12 23	12 0	0 6 4	kolobok.bin 	4 0 0 0
+BAT		24 16	0 8	23 8 	12 15	8 0	3 4 2	bat.bin 	3 0 1 0
+CAMERA2		24 16	0 8	23 8 	12 15	8 0	6 2 2	camera2.bin 	2 0 1 0
+RAT		56 24	0 8	56 8	28 20	28 0	0 6 4 	rat.bin 	4 0 1 0
+q

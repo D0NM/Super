@@ -1,0 +1,100 @@
+Inizia nuova partita
+Continua partita salvata
+Seleziona la lingua
+Esci e resetta il GP32
+Riprendi a giocare
+Salva il gioco e torna al menu#(principale)
+Torna al menu principale
+Pausa
+Premi [A] per salvare, [B] per annullare
+Sovrascrivere il gioco salvato?
+Grazie di avere giocato!
+Compra Super Plusha per nuovi livelli;11
+Tempo esaurito!
+Hai finito l'energia!
+Ouch!
+Uscita aperta!
+Il MOSTRO del livello
+Click!
+Crack!
+Era pericosolo!
+Check Point...
+PIGNA;super items in the shop 18 chars max name/35 chars description
+Tirala contro i nemici
+MIELE
+Restituisce energia
+TEMPO EXTRA
+Incrementa il tempo a disposizione
+LIFE
+Una vita aggiuntiva
+CONTINUE / SAVE
+Permette di salvare o continuare
+SUPER POTERE
+Fornisce energia per alcuni poteri#super
+SUPER SCUDO
+Ti protegge con SUPER POTERE
+SUPER LENTE
+Mostra alcuni segreti e oggetti#nascosti
+SUPER SALTO
+Aumenta l'altezza del salto
+SCARPE CHIODATE
+Permette di eliminare i mostri#saltandoci
+SUPER DISTRUTTORE
+Distrugge i blocchi sotto, dopo un#salto
+SUPER JET
+ti permette di saltare con SUPER#POTERE
+Premi [A] per comprare,#      [B] per uscire dal negozio
+Possiedi questo oggetto
+Non hai abbastanza soldi
+Non ci sta nessun oggetto
+;
+IL PICNIC ROVINATO;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+COLLINE MALEDETTE
+LABIRINTO OSCURO
+FORESTA GIGANTE
+LA FUGA DI TUKKI
+GHIACCIO MORTALE
+UFO MOSTRUOSO
+LIVELLO BONUS
+;
+;
+Alla ricerca di Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Salviamo le colline.
+Labirinto scavato in profondita#sotto le montagne
+La foresta senza fine
+Tukki scappa dagli alieni
+Ghiaccio scivoloso
+Al salvataggio di Tukki e Kuzya
+Entrando nel livello bonus...
+;
+;comics lines:...
+Da qualche parte nel sistema solare...;70
+???: Cosa sta succedendo?
+Kuzya: He-He-He
+Kuzya: Ouch!
+Tukki: Aiuto!
+Tukki: NOOOOO!
+Plusha: Yummy!
+Lumaca: Grazie!
+Lumaca: Questa mappa ti aiuterà!
+Plusha: Credo fosse la mappa sbagliata
+Uccello: Grazie sono libero!
+Uccello: Conosco una scorciatoia...
+Plusha: Conosci un'altra scorciatoia?
+Pipistrello: Grazie!
+Pipistrello: Ti mostro l'uscita...
+Kuzya: Non no salire sugli alberi
+Rana: Grazie!
+Rana: Seguimi...
+Kuzya: Noooo!
+Plusha: Devo salvare i miei amici
+Balena: Sono libera!
+Balena: Salta sul mio dorso
+Plusha: Spero i ragazzi stiano bene
+Tukki: Dove sta l'uscita?
+???: Mi rivedrete!;Fine
+Tukki: Grazie, amici!
+All: Super amici per sempre!!!
+Plusha: Ragazzi, ho fame...
+Tukki: Continuiamo il nostro pic-nic!
+Fine.

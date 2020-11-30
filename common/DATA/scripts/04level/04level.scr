@@ -1,0 +1,101 @@
+;4й уровень
+picture 04frame1.bin 320 200
+picture 04frame2.pic 320 200
+picture 04frame3.pic 320 200
+picture 04frame4.pic 320 200
+picture pk_walk.bin 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite p_walk 103 183 217 13 pk_walk.bin 320 200
+sprite k_walk 213 195 0 5 pk_walk.bin 320 200
+
+sprite boss_big 118 167 202 33 04frame1.bin 320 200
+sprite bat 97 106 0 0 04frame1.bin 320 200
+sprite bat_small 55 62 0 132 04frame1.bin 320 200
+animate bat 2 97 0 3
+animate bat_small 2 55 0 2
+
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+sprite kaplya2 17 34 7 164 frame1.pic 320 200
+animate kaplya2 3 0 -1 2
+mod intro.fms
+background 160
+set boss_big 100 16
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в летуч мышку
+wait 20
+background 170
+wait 5
+fx boss_big shake 10 10 2
+background 160
+wait 5
+transp boss_big 168
+se 25
+wait 5
+swap boss_big bat
+wait 5
+show bat
+background 170
+fx bat flow 12 12 12
+wait 5
+glue bat flash
+background 160
+move bat 190 80 5
+while bat
+background 04frame2.pic 0 0
+hide flash
+fx bat walk 0 10 15
+text 51 83; bat THNAK U
+move bat 200 55 2
+while bat
+wait 30
+;идут и скроллируется план
+render
+clear
+background 04frame3.pic -3 0
+set bat 227 20
+fx bat walk 0 15 23
+set p_walk 115 65
+set k_walk -89 50
+fx p_walk walk 0 5 8
+fx k_walk walk 0 2 6
+text 51 84; bat: i'll show u the exit
+render
+wait 40
+move bat 330 -30 10
+move p_walk 160 65 2
+move k_walk -60 50 1
+while bat
+text ;clear
+wait 40
+
+;дошли до выхода... капля
+render
+clear
+background 04frame4.pic 0 0
+set bat_small 17 90
+fx bat_small walk 1 10 20
+move bat_small 40 80 1
+render
+wait 15
+text 50 85; Kuzya: i not know how to climb trees
+wait 20
+se 13
+set kaplya 164 92
+wait 20
+se 13
+set kaplya2 43 90
+glue bat_small kaplya2
+wait 10
+fx bat_small stop
+se 8
+move bat_small 20 260 8
+while bat_small
+wait 50
+q

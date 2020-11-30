@@ -1,0 +1,51 @@
+picture stars.pic 320 200
+sprite planeta 320 147 0 53 planet.pic 320 200
+sprite tarelka_s 104 40 0 80 planet2.pic 320 200
+sprite l_G 38 48 0 0 gameover.pic 320 200
+sprite l_A 41 48 38 0 gameover.pic 320 200
+sprite l_M 48 48 79 0 gameover.pic 320 200
+sprite l_E 42 48 127 0 gameover.pic 320 200
+sprite l_O 45 51 0 52 gameover.pic 320 200
+sprite l_V 40 51 45 52 gameover.pic 320 200
+sprite l_E2 40 51 85 52 gameover.pic 320 200
+sprite l_R 36 51 125 52 gameover.pic 320 200
+background stars.pic -1 -2
+set tarelka_s 118 200
+animate tarelka_s 2 104 0 3
+set planeta 0 53
+fx tarelka_s flow 25 5 20
+mod gameover.fms
+render
+on
+move planeta 0 200 1
+move tarelka_s 104 -160 3
+;теперь буквы гэйм овер
+set l_G -50 -52
+set l_A 80 -62
+set l_M 190 -62
+set l_E 325 -52
+set l_O -50 202
+set l_V 80 212
+set l_E2 190 212
+set l_R 325 202
+; 169 102 -> x+75 y+49
+move l_G 75 49 2
+move l_A 113 49 2
+move l_M 154 49 2
+move l_E 202 49 2
+move l_O 75 101 2
+move l_V 120 101 2
+move l_E2 160 101 2
+move l_R 200 101 2
+fx l_G flow 3 3 3
+fx l_A flow 3 3 3
+fx l_M flow 3 3 3
+fx l_E flow 3 3 3
+fx l_O flow 3 3 3
+fx l_V flow 3 3 3
+fx l_E2 flow 3 3 3
+fx l_R flow 3 3 3
+while planeta
+allow
+wait 200
+q

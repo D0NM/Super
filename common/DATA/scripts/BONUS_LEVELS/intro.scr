@@ -1,0 +1,9 @@
+picture intro.pic 320 200
+sprite intro 320 200 0 0 intro.pic 320 200
+background intro.pic 1 1
+set intro 0 0
+fx intro flow 5 5 5
+render
+on
+wait 200
+q

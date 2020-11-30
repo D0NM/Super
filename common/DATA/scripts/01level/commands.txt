@@ -1,0 +1,48 @@
+sprite <name> <lx> <ly> <ox> <oy> <pic name> <pic width> <pic height>
+ - создать спрайт
+picture <pic name> <pic width> <pic height>
+ - создать и загрузить картинку
+animate sprite <n> <sx> <sy> <delay>
+ - анимировать спрайт n фаз, sx sy - сдвиг в картинке, Delay - пауза между сменой картинок
+strip <name.pic> <name.scr> <number>
+ - загрузить стрип и сделать его фоном с шагом number
+background <number>
+ - задать задний фон - заливка цветом номер
+background <pic name> <step x> <step y>
+ - задать задний фон - скроллирующуюс€ картинку
+background stripe <number>
+ - задать задний фон - загруженный ранее stripe + скорость
+palette <name>
+ - загрузить палитру (не работает.. не тестировал)
+on
+ - палитру вкл
+off
+ - затушить экран
+text <number>
+ - текст.. из €зыковых... гмм
+render
+ - вкл/выкл отрисовку
+fx <sprite> <flow|shake|stop|walk> <sx> <sy> <wait>
+ - задать спец эффект спрайту (и границы и задержку срабатывани€)
+set <sprite> <x> <y>
+ - переместить спрайт ’ ”
+move <sprite> <x> <y> <step>
+ - отправить спрайт по линии в ’ ” с шагом прироста step
+glue <sprite1> <sprite2>
+ - приклеить спрайт 2 к 1му...
+unglue <sprite>
+ - отклеить спрайт от его родител€
+wait <number renders>
+ - ждать number отрисовок
+while <sprite>
+ - ждать пока спрайт движетс€
+swap <sprite> <sprite>
+ - помен€ть спрайты местами
+hide <sprite>
+ - спр€тать спрайт
+show <sprite>
+ - показать спрайт
+;
+ - комментарий
+q
+ - выход

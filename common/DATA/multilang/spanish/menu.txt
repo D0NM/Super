@@ -1,0 +1,18 @@
+Aj0\code> Comenzar | Salir
+<Aj0\code> Continuar | Pausa
+<Aj0\code> Idioma | Si | No
+<Aj0\code> Sobreescribir | Tienda
+<Aj0\code> Salvar | Cargando...
+<Aj0\code> Volver a la partida | Demo
+<Aj0\code> Salvar y salir
+<Aj0\code> Salir al menu`
+
+<Aj0\code> and spanish is: Espan~ol
+<Aj0\code> hmmm like tilde going to the top right corner
+> i can't see it on my screen... due to russian fonts
+<Aj0\code> tilde->accent
+> it's like ' ?
+<Aj0\code> yep
+<Aj0\code> but looking to the top right
+> ok
+<Aj0\code> :)

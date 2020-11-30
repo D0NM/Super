@@ -1,0 +1,100 @@
+Start new game
+Continue saved game
+Select your language
+Exit game and reboot GP32
+Return to game
+Save game and exit to main menu
+Exit to main menu
+Pause game
+Press [A] to save, [B] to cancel
+Overwrite saved game?
+Thank you for playing!
+Buy Super Plusha game for more levels;11
+Time is up!
+Energy is up!
+Ouch!
+The Exit is revealed!
+Level BOSS
+Click!
+Crack!
+Instant Death!
+Check Point...
+CONE	;super items in the shop 18 chars max name/35 chars description/use # for 2nd line
+Throw on enemies
+HONEY
+Restores energy
+EXTRA TIME
+Extends time
+LIFE
+Adds extra life
+CONTINUE / SAVE
+Allows you continue/save game
+SUPER POWER
+Supplies power for some super items
+SUPER SHIELD
+Protects you with SUPER POWER
+SUPER LENS
+Reveals some secrets and hidden#items
+SUPER JUMP
+Increases your jump height
+SPIKY BOOTS
+Jump on enemies to kill them
+SUPER CRUSHER
+Allows you crush lower blocks
+SUPER JET
+Flight ability (uses SUPER POWER)
+Press [A] to buy, [B] to exit the shop
+Inventory full
+Not enough money
+No item
+;
+SPOILED PICNIC;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+CURSED HILLS
+DARK DUNGEON
+GIANT FOREST
+TUKKI'S ESCAPE
+DEADLY ICE
+EVIL UFO
+BONUS LEVEL
+;
+;
+The search for Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Let's save the hills
+Dungeon deeply digged#under the mountains
+Never ending Forest
+Tukki's escape from the aliens
+Sliding Ice
+Let's save Tukki & Kuzya
+Enter Bonus Level
+;
+;comics lines: 40 characters max
+Somewhere in the solar system...;70
+???: What's going on?;intro
+Kuzya: HeHeHe.;1
+Kuzya: Ouch!
+Tukki: Help me!
+Tukki: Noooo!
+Plusha: Yummy!
+Snail: Thanks!;2
+Snail: This map will help you.
+Plusha: I think it was the wrong map.
+Bird: Thank you! I'm free!;3
+Bird: I know a short cut.
+Plusha: Do you know another short cut?
+Bat: Thank you!;4
+Bat: I'll show you the exit.
+Kuzya: I don't know how to climb trees.
+Frog: Thanks!;6
+Frog: Follow me.
+Kuzya: Noooo!
+Plusha: I'll rescue my friends.
+Whale: I'm free!;7
+Whale: Jump on my back.
+Plusha: I hope my friends are OK.
+Tukki: Where is the exit?;5
+???: I'll be back!;fin
+Tukki: Thank you friends!
+All: Best friends forever!!!
+Plusha: Guys, I'm hungry...
+Tukki: Let's continue our picnic.
+The End.

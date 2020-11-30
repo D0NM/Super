@@ -1,0 +1,100 @@
+Commencer nouveau jeu
+Continuer jeu sauvegarde
+Choisis ta langue
+Sortir du jeu et redemarrer la GP32
+Revenir au jeu
+Sauvegarder jeu et revenir au#menu principal
+Revenir au menu principal
+Pause
+Appuie sur [A] pour sauvegarder,#[B] pour annuler
+Ecraser la precedente sauvegarde?
+Merci d'avoir joue!
+Acheter Super Plusha#pour plus de niveaux;11
+Plus de temps!
+Plus d'energie!
+Aie!
+La sortie est ouverte!
+BOSS du niveau
+Click!
+Crack!
+Mort instantanee!
+Point de Controle...
+CONE	;super items in the shop 18 chars max name/35 chars description/use # for 2nd line
+Lance-le sur tes ennemis
+MIEL
+Restore ton energie
+TEMPS SUP.
+Ajoute du temps supplementaire
+VIE
+Ajoute une vie supplementaire
+CONTINUER / SAUV.
+Permet de sauver/continuer un jeu
+SUPER POUVOIR
+Fournit du pouvoir pour super items
+SUPER BOUCLIER
+Protege avec SUPER POUVOIR
+SUPER VERRES
+Montre des items secrets et caches
+SUPER SAUT
+Augmente la hauteur de tes sauts
+BOTTES A EPINES
+Saute sur l'ennemi pour le tuer
+SUPER BROYEUR
+Permet de détruire les blocs du bas
+SUPER JET
+Possibilite de voler#(avec SUPER POUVOIR)
+Appuie sur [A] pour acheter,#      [B] pour sortir de la boutique
+Inventaire plein
+Pas assez d'argent
+Aucun item
+;
+PIQUE-NIQUE GACHE;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+COLLINES MAUDITES
+SOMBRE DONGEON
+FORET GEANTE
+LA FUITE DE TUKKI
+GLACIERS MORTELS
+OVNI MALEFIQUE
+NIVEAU BONUS
+;
+;
+A la recherche de Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Sauvons nos collines
+Dongeon profondement creuse#sous les montagnes
+Foret sans fin
+Tukki s'echappe des aliens
+Glace glissante
+Sauvons Tukki & Kuzya
+Acceder au Niveau Bonus
+;
+;comics lines: 39 characters max
+Quelque part dans le systeme solaire...;70
+???: Qu'est-ce qui se passe?;intro
+Kuzya: He-He-He.;1
+Kuzya: Aie!
+Tukki: Aidez-moi!
+Tukki: Noooon!
+Plusha: Miam!
+Snail: Merci!;2
+Snail: Cette carte va t'aider.
+Je pense que c'etait la mauvaise carte
+Bird: Merci! Je suis libre!;3
+Bird: Je connais un raccourci.
+Plusha: Tu connais un autre raccourci?
+Bat: Merci!;4
+Bat: Je vais te montrer la sortie.
+Kuzya:Je ne sais pas grimper aux arbres
+Frog: Merci!;6
+Frog: Suivez-moi.
+Kuzya: Noooon!
+Plusha: Je vais secourir mes amis.
+Whale: Je suis libre!;7
+Whale: Saute sur mon dos.
+Plusha:J'espere que mes amis sont saufs
+Tukki: Ou est la sortie?;5
+???: Je reviendrai!;fin
+Tukki: Merci les amis!
+All: Les meilleurs amis pour toujours!
+Plusha: Les gars, j'ai faim...
+Tukki: Continuons notre pique-nique.
+Fin.

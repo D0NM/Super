@@ -1,0 +1,63 @@
+새 게임 시작
+저장된 게임 컨티뉴
+언어 선택
+게임 종료후 GP32 리셋
+게임으로 복귀
+게임 저장후 메인 메뉴로 복귀
+'컨티뉴'가 없으면 세이브를 하지 못합니다
+메인 메뉴로 나가기
+일시정지
+세이브는 A버튼, 취소는 B버튼
+저장된 게임에 덮어씁니까?
+;11
+시간 종료!
+꿀이 떨어졌습니다!
+아야!
+출구가 열렸습니다!
+이 단계의 보스
+찰칵!
+콰직!
+위험했어요!
+체크 포인트...
+솔방울	;super items in the shop
+꿀
+추가 시간
++1라이프
++1 컨티뉴
+슈퍼 파워
+슈퍼 실드
+슈퍼 렌즈
+슈퍼 점프
+슈퍼 스파이크 부츠
+슈퍼 크래쉬 부츠
+슈퍼 제트
+구입은 A버튼,  종료는 B버튼
+;34 
+;35 
+;36 
+;37 
+;38
+;39
+; LEVEL NAMES: use only BIG ENGLISH LETTERS here
+WAHA! SU-PI-DA!
+NEMO UN-DUCK
+GI-PUN DUNGEON
+GU-DAE-HAN SOOP
+TUKKY-EI TAL-CHUL
+CHIMMUCK-EI UL-UM
+DOI-JI GONG-JANG
+;48
+;49
+; LEVEL NAMES: You can use your national characters here
+와아! 숲이다!
+체커즈 힐즈
+깊은 던젼
+자이언트 포레스트
+터키스 이스케이프
+허싱 아이스
+돼지 공장
+;58
+;comics lines:
+;60 ...
+;61
+;62

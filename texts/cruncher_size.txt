@@ -1,0 +1,1 @@
+long size = *(long *)(source_data + 4);

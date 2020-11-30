@@ -1,0 +1,12 @@
+PLUSHA		32 32	4 9 22	27 9 22	9 22 30	9 22 0	0	plusha.bin	6 4 5 3
+
+-WORM_C		16 08	0 8	16 8	8 06	8 0	0 3 1	worm_c.bin 	4 0 0 1
+BOSS7 		56 56	0 8	55 8 	28 50	28 0	20 4 20 boss7.bin 	4 1 1 1
+CAMERA1		16 16	0 8	15 8	7 09	7 0	6 1 1	camera1.bin 	2 0 1 0
+ROBOT1		24 24	0 8	23 8	12 23	12 0	0 2 5	robot1.bin 	4 0 0 1
+ROBOT2		24 24	0 8	23 8 	12 23	12 0	1 2 5	kolobok.bin 	4 0 0 0
+RAT		56 24	0 8	56 8	28 20	28 0	0 6 4 	rat.bin 	4 0 1 0
+mBOMB		16 16	0 8	15 8	7 15	7 0	6 0 3	bomb.bin 	4 0 0 0
+vBOMB		16 16	0 8 	15 8	7 15	7 0	3 0 3	bomb.bin        4 0 0 0
+hvBomb		16 16	0 8	15 8	7 15	7 0	3 1 3	bomb.bin        4 0 0 0
+q

@@ -1,0 +1,100 @@
+Comenzar nueva partida
+Continuar partida salvada
+Selecciona tu idioma
+Salir de la partida y reiniciar la GP32
+Volver a la partida
+Salvar partida y salir al menu principal
+Salir al menu principal
+Pausa
+Pulsa [A] para salvar, [B] para cancelar
+Sobreescribir juego salvado?
+Gracias por jugar!
+Compra Super Plusha para conseguir mas niveles;11
+Se acabo el tiempo!
+Se acabo la energia!
+Ouch!
+La salida esta descubierta!
+Nivel del BOSS
+Click!
+Crack!
+Muerte Instantanea!
+Check Point...
+PIN~A	;super items in the shop 18 chars max name/35 chars description/use # for 2nd line
+Para lanzar a los enemigos
+MIEL
+Restaura la energia
+TIEMPO EXTRA
+Extiende el tiempo
+VIDA
+An~ade una vida extra
+CONTINUE / SAVE
+Te permite continuar/salvar#la partida
+SUPER PODER
+Energia para los super objetos
+SUPER SHIELD
+Te protege con super poder
+SUPER LENTES
+Revela secretos y objetos#ocultos
+SUPER SALTO
+Aumenta tu altura de salto
+BOTAS CON PINCHOS
+Sirven para matar a los enemigos#saltando sobre ellos
+SUPER APLASTADOR
+Te permite destruir bloques bajo tus#pies
+SUPER JET
+Habilidad de vuelo (usa SUPER#PODER)
+Presiona [A] para comprar,#         [B] para salir de la tienda
+Inventario lleno
+No tienes suficiente dinero
+No hay objeto
+;
+PICNIC ARRUINADO;50 LEVEL TITLES: use only BIG ENGLISH LETTERS here
+COLINAS MALDITAS
+MAZMORRA OSCURA
+BOSQUE GIGANTE
+LA HUIDA DE TUKKI
+HIELO MORTAL
+OVNI MALVADO
+NIVEL DE BONUS
+;
+;
+La busqueda the Tukki!;60 LEVEL NAMES full description: You can use Korean characters here
+Salvemos las colinas
+Mazmorra profundamente#escabada bajo las montan~as
+El bosque interminable
+La huida de Tukki de los aliens
+Hielo deslizante
+Salvemos a Tukki y Kuzya
+Entrar al nivel de Bonus
+;
+;comics lines: 40 characters max
+En algun lugar del sistema solar...;70
+???: Que esta ocurriendo?;intro
+Kuzya: HeHeHe.;1
+Kuzya: Ouch!
+Tukki: Ayudaaa!
+Tukki: Noooo!
+Plusha: Yummy!
+Snail: Gracias!;2
+Snail: Este mapa os ayudara.
+Plusha:Creo que el mapa esta equivocado
+Bird: Gracias! Soy libre!;3
+Bird: Conozco un atajo.
+Plusha: Conoces otro atajo?
+Bat: Gracias!;4
+Bat: Os mostrare la salida
+Kuzya: No se como subir a los arboles.
+Frog: Gracias!;6
+Frog: Sigueme.
+Kuzya: Noooo!
+Plusha: Rescatare a mis amigos.
+Whale: Soy libre!;7
+Whale: Subid a mi espalda.
+Plusha:Espero que mis amigos esten bien
+Tukki: Donde esta la salida?;5
+???: Volvere!;fin
+Tukki: Gracias amigos!
+All: Los mejors amigos para siempre!!!
+Plusha: Tios, estoy hambriento...
+Tukki: Continuemos nuestro picnic.
+Fin.

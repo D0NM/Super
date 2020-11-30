@@ -1,0 +1,112 @@
+;2й уровень
+picture 02frame0.bin 320 200
+picture 02frame1.pic 320 200
+picture 02frame2.pic 320 200
+picture pk_walk.bin 320 200
+picture 02_bg2pl.pic 320 200
+picture 02_bg1pl.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite 1plan1 320 200 0 0 02_bg1pl.pic 320 200
+sprite 1plan2 320 200 0 0 02_bg1pl.pic 320 200
+;sprite 1plan3 320 200 0 0 02_bg1pl.pic 320 200
+
+sprite p_walk 103 183 217 13 pk_walk.bin 320 200
+sprite k_walk 213 195 0 5 pk_walk.bin 320 200
+
+sprite boss_big 148 130 0 0 02frame0.bin 320 200
+sprite boss_small 113 97 149 2 02frame0.bin 320 200
+sprite map_small 29 33 144 164 02frame0.bin 320 200
+sprite ulitka 82 72 237 128 02frame0.bin 320 200
+sprite ulitka_small 40 33 279 86 02frame0.bin 320 200
+sprite map 58 69 176 130 02frame0.bin 320 200
+
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+sprite kaplya2 17 34 7 164 frame1.pic 320 200
+animate kaplya2 3 0 -1 2
+mod intro.fms
+background 15
+set boss_big 84 40
+;set boss_ten 167 156
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в улиту
+wait 5
+background 49
+wait 5
+fx boss_big shake 10 10 2
+background 15
+wait 5
+transp boss_big 39
+wait 5
+swap boss_big boss_small
+background 46
+wait 5
+show boss_small
+fx boss_small flow 2 2 2
+wait 5
+glue boss_small flash
+background 15
+move boss_small 190 90 5
+while boss_small
+transp boss_small 55
+se 25
+wait 5
+swap boss_small ulitka
+wait 5
+show ulitka
+background 02frame1.pic 0 0
+hide flash
+fx ulitka walk 0 1 5
+move ulitka 140 125 1
+text 51 77; улита? THNAK U
+while ulitka
+wait 10
+set map_small 144 130
+se 20
+wait 10
+text 51 78;ulita: MAP HELP U
+move ulitka 170 129 1
+wait 50
+
+;идут и скроллируется план
+render
+clear
+background 02_bg2pl.pic -1 0
+set 1plan1 0 0
+set 1plan2 320 0
+set p_walk 140 70
+set map 227 151
+fx map walk 0 1 6
+glue p_walk map
+set k_walk -69 50
+fx p_walk walk 0 5 8
+fx k_walk walk 0 2 6
+move 1plan1 -320 0 5
+move 1plan2 0 0 5
+render
+while 1plan2
+
+;дошли до поля... капля
+render
+clear
+background 02frame2.pic 0 0
+set ulitka_small 30 167
+render
+move ulitka_small -50 170 1
+wait 5
+se 13
+set kaplya 68 104
+text 200 79;Плюша
+wait 10
+se 13
+set kaplya2 110 82
+wait 40
+hide kaplya
+wait 100
+q

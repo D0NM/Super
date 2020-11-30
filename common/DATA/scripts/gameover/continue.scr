@@ -1,0 +1,39 @@
+picture stars.pic 320 200
+sprite planeta 320 147 0 53 planet.pic 320 200
+sprite tarelka_s 104 40 0 80 planet2.pic 320 200
+;sprite gameover 169 103 0 0 gameover.pic 320 200
+sprite continue 320 50 0 103 gameover.pic 320 200
+background stars.pic -1 -2
+set tarelka_s 118 200
+animate tarelka_s 2 104 0 3
+set planeta 0 53
+fx tarelka_s flow 25 5 20
+set continue 0 200
+mod continue.fms
+render
+on
+move planeta 0 190 1
+move tarelka_s 104 -160 3
+;теперь буквы гэйм овер двигаем
+move continue 0 75 4
+while continue
+fx continue flow 1 2 2
+wait 10
+fx tarelka_s shake 5 5 3
+se 25
+fx continue flow 2 4 3
+wait 10
+move tarelka_s 18 220 5
+fx continue flow 2 6 5
+wait 10
+se 25
+fx continue flow 2 10 5
+wait 10
+se 8
+while planeta
+wait 10
+move planeta 0 53 1
+allow
+while planeta
+wait 100
+q

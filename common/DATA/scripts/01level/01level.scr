@@ -1,0 +1,201 @@
+picture nebo.pic 320 200
+picture frame0.pic 320 200
+sprite ob_plan 320 200 0 0 ob_plan.pic 320 200
+sprite Plusha_BD 67 44 34 154 frame1.pic 320 200
+sprite Kuzya_BD 86 49 110 150 frame1.pic 320 200
+sprite Tukki_B 75 67 2 124 frame2.pic 320 200
+sprite Plusha_B 82 73 80 122 frame2.pic 320 200
+sprite Kuzya_B 79 66 241 125 frame2.pic 320 200
+sprite Kuzya_BP 73 66 168 125 frame2.pic 320 200
+sprite Plusha_HR 89 76 0 0 frame1.pic 320 200
+sprite Plusha_HF 96 73 0 76 frame1.pic 320 200
+sprite Kuzya_HL 80 67 102 0 frame1.pic 320 200
+sprite Kuzya_HS 80 73 237 0 frame1.pic 320 200
+sprite Kuzya_HF 89 68 98 71 frame1.pic 320 200
+sprite Tukki_HF 75 111 0 0 frame2.pic 320 200
+sprite Tukki_HM 75 111 79 0 frame2.pic 320 200
+sprite Tukki_HR 74 109 157 0 frame2.pic 320 200
+sprite Tukki_HL 73 109 238 0 frame2.pic 320 200
+sprite Tukki_BS 75 185 0 0 frame3.pic 320 200
+sprite kuski 16 16 168 184 planet2.pic 320 200
+sprite kuski2 16 16 184 184 planet2.pic 320 200
+sprite kuski3 16 16 200 184 planet2.pic 320 200
+sprite b_kuski 36 29 211 170 frame3.pic 320 200
+sprite b_kuski2 34 34 249 166 frame3.pic 320 200
+sprite b_kuski3 35 38 283 161 frame3.pic 320 200
+sprite Tukki_S 21 52 183 148 frame3.pic 320 200
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+sprite luch 100 200 79 0 frame3.pic 320 200
+sprite luch2 39 200 83 0 frame3.pic 320 200
+sprite tarelka_c 105 78 107 0 planet2.pic 320 200
+set kuski 67 -40
+set kuski2 150 -30
+set kuski3 256 -20
+set tarelka_c 108 -200
+fx tarelka_c flow 30 10 17
+background nebo.pic 0 -15
+move tarelka_c 108 120 7
+move kuski 50 220 11
+move kuski2 160 220 13
+move kuski3 277 220 15
+mod intro.fms
+render
+on
+se 8
+while tarelka_c
+move tarelka_c 108 -100 7
+background nebo.pic 0 -11
+while tarelka_c
+move kuski 50 -20 15
+move kuski2 160 -20 15
+move kuski3 277 -20 15
+while kuski3
+background nebo.pic 0 -9
+wait 7
+background nebo.pic 0 -7
+wait 7
+;выезжает пикник
+set ob_plan 0 200
+move ob_plan 0 0 5
+background nebo.pic 0 -7
+wait 15
+background nebo.pic 0 -3
+while ob_plan
+background nebo.pic -1 0
+wait 10
+render ;сцена крупн план падение на головы
+clear
+background frame0.pic 0 0
+set Kuzya_B 238 155
+set Plusha_B 8 146
+set Tukki_B 124 114
+set Kuzya_HL 235 93
+set Plusha_HR 3 80
+set Tukki_HF 123 13
+set b_kuski 67 -40
+text 200 76 ;Plusha: Yummi!
+render
+se 19
+wait 15
+animate Tukki_HF 2 79 0 5
+wait 20
+;падает на плюшу
+move b_kuski 32 78 11
+se 8
+while b_kuski ;упало на плюшу
+text ;clear
+se 23
+set Plusha_HR 3 83
+move b_kuski -50 50 9
+wait 5
+text 50 72 ;kuzya hehehe
+swap Plusha_HR Plusha_HF ;смеется Кузя
+swap Kuzya_HL Kuzya_HS
+swap Kuzya_B Kuzya_BP
+glue Kuzya_BP Kuzya_HS
+fx Kuzya_BP walk 1 3 3
+swap Tukki_HF Tukki_HL
+fx Plusha_HF flow 3 3 4
+wait 10
+set kaplya 175 60
+wait 10 ;падает на плюшу и кузю
+se 8
+set b_kuski2 67 -40
+set b_kuski3 200 -30
+move b_kuski2 30 78 11
+move b_kuski3 250 85 12
+while b_kuski3
+se 23
+move b_kuski3 330 50 9
+while b_kuski2
+se 23
+move b_kuski2 -50 50 9
+wait 10 ;тело плюши
+render
+hide Plusha_B
+hide Plusha_HF
+set Plusha_BD -20 158
+fx Plusha_BD shake 3 2 4
+set Kuzya_HS 235 96
+swap Kuzya_HS Kuzya_HF
+se 13
+text 50 73 ;kuzya ouch!
+render ;упало на кузю
+wait 5
+swap Kuzya_BP Kuzya_B
+fx Kuzya_HF flow 3 3 4
+wait 5
+hide kaplya
+swap Tukki_HL Tukki_HR
+wait 5
+render
+hide Kuzya_HF
+hide Kuzya_B
+set Kuzya_BD 260 158
+se 13
+text ;clear
+render
+fx Kuzya_BD shake 3 2 3
+set kaplya 130 50
+wait 15
+render ;сцена засоса
+set b_kuski -20 220
+set b_kuski2 -30 190
+set b_kuski3 330 220
+fx b_kuski flow 10 10 5
+fx b_kuski2 flow 10 10 5
+fx b_kuski3 flow 10 10 5
+move b_kuski 150 -50 5
+move b_kuski2 150 -50 6
+move b_kuski3 150 -50 5
+set luch 110 -200
+move luch 110 0 15
+fx luch shake 2 0 2
+transp luch 71
+se 27
+render
+wait 20
+render
+hide Tukki_B
+hide Tukki_HR
+set Tukki_BS 123 -10
+set kaplya 120 30
+glue Tukki_BS kaplya
+text 160 74 ;Tukki: help me!
+render
+wait 20
+fx Tukki_BS flow 10 10 5
+move Tukki_BS 123 -200 4
+se 28
+while Tukki_BS
+move luch 110 -200 20
+while luch ;теперь небо чистое и там луч и куски мелкие в тарелку
+render
+clear
+set tarelka_c 108 10
+fx tarelka_c stop
+set luch2 141 87
+glue tarelka_c luch2
+set ob_plan 0 160
+move ob_plan 0 210 1
+background nebo.pic 0 1
+set kuski 160 260
+set kuski2 150 210
+set kuski3 140 240
+set Tukki_S 156 280
+move kuski 152 30 5
+move kuski2 152 30 5
+move kuski3 152 30 5
+move Tukki_S 150 23 5
+render
+se 27
+text 160 75 ;Tukki: No-oooo!
+while Tukki_S
+render
+hide Tukki_S
+hide kuski
+hide kuski2
+hide kuski3
+render
+q ;дальше виснет.. из-за glue пологаю

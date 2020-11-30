@@ -1,0 +1,127 @@
+;7й уровень
+picture 07frame1.pic 320 200
+picture 07frame2.pic 320 200
+picture 07frame3.pic 320 200
+picture 07frame4.pic 320 200
+picture 07bg1.pic 320 200
+picture 07bg2.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite boss_big 103 159 0 0 07frame1.pic 320 200
+sprite boss_crk 188 137 104 0 07frame1.pic 320 200
+
+sprite crack1 227 78 93 122 07frame3.pic 320 200
+sprite crack2 305 103 15 0 07frame3.pic 320 200
+
+sprite tarelka_s 104 40 0 80 planet2.pic 320 200
+animate tarelka_s 2 104 0 3
+fx tarelka_s walk 0 1 4
+
+sprite crack 180 85 0 0 07frame2.pic 320 200
+sprite water_tr 176 60 0 107 07frame2.pic 320 200
+sprite whale_h 142 92 178 108 07frame2.pic 320 200
+sprite plusha 55 90 265 0 07frame2.pic 320 200
+
+sprite whale 320 193 0 7 07frame4.pic 320 200
+
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+
+mod intro.fms
+background 144
+set boss_big 112 30
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в в трещину
+
+wait 10
+background 115
+wait 10
+background 144
+se 25
+swap boss_big boss_crk
+glue boss_crk flash
+move boss_crk 134 70 10
+wait 15
+render
+background 07bg1.pic 0 0
+set plusha 49 84
+render
+while boss_crk
+
+render
+se 25
+hide flash
+hide boss_crk
+set crack 140 115
+render
+wait 10
+
+render
+se 25
+hide crack
+set crack1 92 122
+render
+wait 10
+
+render
+se 25
+hide crack1
+set crack2 15 98
+render
+wait 10
+
+set water_tr 144 200
+transp water_tr 247
+move water_tr 144 145 1
+while water_tr
+fx water_tr walk 0 5 10
+
+wait 10
+
+set whale_h 320 200
+move whale_h 180 120 3
+fx whale_h flow 2 4 5
+while whale_h
+text 160 91; whale: jump on my back
+wait 20
+
+se 4
+move plusha 170 40 15
+while plusha
+
+;плывем на ките
+render
+clear
+background 07bg2.pic 1 0
+set whale 320 65
+fx whale walk 2 6 12
+move whale 90 40 5
+render
+text 160 90; whale: I'm free!
+wait 15
+
+set tarelka_s -240 118
+move tarelka_s 10 118 2
+
+while tarelka_s
+
+text ;clear
+wait 10
+
+text 50 92; Plusha: I hope my frends OK
+
+move whale 1 40 2
+move tarelka_s 50 118 1
+
+wait 20
+se 13
+set kaplya 172 120
+wait 5
+move kaplya 152 120 1
+wait 35
+q

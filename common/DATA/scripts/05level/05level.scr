@@ -1,0 +1,91 @@
+;5й уровень
+picture 05frame1.pic 320 200
+picture 05frame2.pic 320 200
+picture 05bg1.pic 320 200
+picture 05bg2.pic 320 200
+picture 05bg3.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite tukki_roped 63 199 194 1 05frame1.pic 320 200
+animate tukki_roped 2 63 0 4
+sprite tukki_run 97 200 0 0 05frame1.pic 320 200
+animate tukki_run 2 97 0 3
+sprite tarelka_1 31 22 248 0 05frame2.pic 320 200
+sprite tarelka_b 191 67 0 0 05frame2.pic 320 200
+sprite tarelka_2 57 43 191 0 05frame2.pic 320 200
+fx tarelka_b walk 0 3 7
+fx tarelka_1 flow 3 3 5
+fx tarelka_2 flow 5 5 6
+
+sprite tukki_down 43 109 94 91 05frame2.pic 320 200
+sprite zaplata 94 30 0 170 05frame2.pic 320 200
+
+sprite big_ufo 384 136 0 0 big_ufo.bin 384 136
+
+mod alien.fms
+background 10
+set tukki_roped 128 -11
+fx tukki_r walk 5 1 9
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в в трещинуморгание и падение висячего зайца
+
+wait 10
+background 143
+wait 10
+background 10
+wait 10
+background 143
+wait 10
+background 10
+se 8
+move tukki_roped 128 200 10
+animate tukki_roped 1 0 0 0
+while tukki_roped
+se 23;удар о пол
+off
+wait 10
+render
+clear
+background 05bg1.pic -5 0
+set tukki_run -99 27
+move tukki_run 92 27 5
+render
+on
+wait 10
+text 160 93; Tukki: were's the exit?
+while tukki_run
+wait 30
+move tukki_run 192 27 5
+wait 5
+
+render
+clear
+background 05bg2.pic 0 0
+set zaplata 100 170
+set big_ufo 20 -119
+fx big_ufo walk 0 3 5
+set tukki_down 123 -50
+move tukki_down 123 180 5
+render
+se 8
+while tukki_down
+
+render
+clear
+background 05bg3.pic 0 0
+set tarelka_b 76 7
+set tarelka_1 -53 0
+set tarelka_2 330 7
+move tarelka_1 330 110 6
+move tarelka_2 -50 100 4
+render
+se 28
+wait 30
+move tarelka_1 200 -100 5
+wait 30
+
+q

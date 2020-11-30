@@ -1,0 +1,6 @@
+enum {sfx_cursor, sfx_OK, sfx_cancel, sfx_error, 
+	sfx_jump, sfx_throw, sfx_fall, sfx_pain, sfx_death, 
+	sfx_teleport, sfx_on, sfx_off, sfx_lock, sfx_checkpoint,
+	sfx_cone, sfx_coin, sfx_key, sfx_honey, sfx_live, sfx_clock, sfx_item, sfx_power,
+	sfx_magic, sfx_kill};
+

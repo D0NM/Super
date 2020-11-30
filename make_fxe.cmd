@@ -1,0 +1,1 @@
+b2fxec -t "Super Plusha DEMO" -a "FaMe Soft (c)2004" -b plusha_icon.bmp plusha_release.axf plusha.fxe

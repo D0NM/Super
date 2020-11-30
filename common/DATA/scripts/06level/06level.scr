@@ -1,0 +1,158 @@
+;6й уровень
+picture nebo.pic 320 200
+picture 06frame0.bin 320 200
+picture 06frame1.pic 320 200
+picture 06frame2.pic 320 200
+picture pk_walk.bin 320 200
+
+picture 06bg1.pic 320 200
+sprite 1plan1 320 200 0 0 06bg2.pic 320 200
+sprite 1plan2 320 200 0 0 06bg2.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite p_walk 103 183 217 13 pk_walk.bin 320 200
+sprite k_walk 213 195 0 5 pk_walk.bin 320 200
+
+sprite boss_big 140 200 0 0 06frame0.bin 320 200
+sprite frog 78 79 140 121 06frame0.bin 320 200
+sprite frog_small 61 63 140 0 06frame0.bin 320 200
+animate frog 2 78 0 4
+animate frog_small 2 61 0 4
+
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+sprite kaplya2 17 34 7 164 frame1.pic 320 200
+animate kaplya2 3 0 -1 2
+
+sprite kuzya_small 24 44 181 99 frame3.pic 320 200
+sprite luch 100 200 79 0 frame3.pic 320 200
+sprite luch2 39 200 83 0 frame3.pic 320 200
+sprite tarelka_c 105 78 107 0 planet2.pic 320 200
+
+mod intro.fms
+background 80
+set boss_big 90 1
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в л€гуху
+wait 20
+background 226
+wait 5
+fx boss_big shake 10 10 2
+background 80
+wait 5
+transp boss_big 88
+se 25
+wait 5
+swap boss_big frog_small
+wait 5
+show frog_small
+background 226
+wait 5
+glue frog_small flash
+background 160
+move frog_small 220 125 5
+while frog_small
+background 06frame1.pic 0 0
+hide flash
+fx frog_small walk 10 0 15
+text 248 86; Frog THANK U
+wait 30
+move frog_small 320 135 5
+text; clear
+while frog_small
+
+;идут и скроллируетс€ план
+render
+clear
+background 06bg1.pic -3 0
+set 1plan1 0 0
+set 1plan2 320 0
+set frog 225 121
+fx frog walk 3 0 5
+set p_walk 115 65
+set k_walk -89 50
+fx p_walk walk 0 5 8
+fx k_walk walk 0 2 6
+text 248 87; frog: follow me
+move 1plan1 -320 0 5
+move 1plan2 0 0 5
+render
+wait 20
+move frog 330 125 10
+move p_walk 160 65 2
+move k_walk -60 50 1
+while frog
+text ;clear
+while 1plan2
+
+;похищение мелк план тарелки
+render
+clear
+set tarelka_c -108 -200
+fx tarelka_c flow 30 10 17
+background nebo.pic -5 -10
+move tarelka_c 110 60 5
+render
+se 26
+while tarelka_c
+background nebo.pic -1 -15
+wait 10
+;луч на  узю
+render
+clear
+background 06bg1.pic -3 0
+set 1plan1 0 0
+set 1plan2 320 0
+show p_walk
+show k_walk
+move 1plan1 -320 0 5
+move 1plan2 0 0 5
+set luch 30 -200
+move luch 30 0 50
+render
+se 27
+while luch
+transp luch 71
+move k_walk -220 40 15
+wait 10
+move luch 10 -200 15
+se 28
+wait 20
+;луч в чистом небе и куз€ по лучу вверх
+render
+clear
+background nebo.pic 0 1
+set luch2 142 0
+transp luch2 71
+fx luch2 flow 2 0 5
+set kuzya_small 150 200
+move kuzya_small 150 40 4
+text 50 88; Kuzya: Noooo!
+render
+se 27
+while kuzya_small
+
+off
+wait 15
+
+;дошли до выхода... капл€
+render
+clear
+background 06frame2.pic 0 0
+set frog_small 134 85
+fx frog_small walk 2 0 10
+move frog_small 129 101 1
+render
+on
+wait 15
+text 50 89; Plusha: I'll help my friends
+wait 20
+se 13
+set kaplya 72 92
+wait 50
+q

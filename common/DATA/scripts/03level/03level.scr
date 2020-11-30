@@ -1,0 +1,104 @@
+;3й уровень
+picture 03frame1.bin 320 200
+picture 02frame1.pic 320 200
+picture 03frame3.pic 320 200
+picture pk_walk.bin 320 200
+picture 02_bg2pl.pic 320 200
+picture 02_bg1pl.pic 320 200
+picture checkers.pic 320 200
+
+sprite flash 248 248 0 0 flash1.bin 248 248
+
+sprite 1plan1 320 200 0 0 02_bg1pl.pic 320 200
+sprite 1plan2 320 200 0 0 02_bg1pl.pic 320 200
+
+sprite p_walk 103 183 217 13 pk_walk.bin 320 200
+sprite k_walk 213 195 0 5 pk_walk.bin 320 200
+
+sprite boss_big 142 198 0 0 03frame1.bin 320 200
+sprite bird 97 100 143 0 03frame1.bin 320 200
+sprite bird_small 80 80 240 40 03frame1.bin 320 200
+sprite bottle 24 32 254 0 03frame1.bin 320 200
+animate bird 2 0 100 3
+animate bird_small 2 0 80 3
+
+sprite kaplya 17 34 7 164 frame1.pic 320 200
+animate kaplya 3 0 -1 2
+sprite kaplya2 17 34 7 164 frame1.pic 320 200
+animate kaplya2 3 0 -1 2
+mod intro.fms
+background checkers.pic 3 -2
+set boss_big 89 1
+fx boss_big shake 5 5 3
+set flash 36 -24
+fx flash flow 3 3 3
+render
+on
+;превращение босса в птицу
+wait 20
+background 49
+wait 5
+fx boss_big shake 10 10 2
+background checkers.pic 2 -3
+wait 5
+transp boss_big 55
+se 25
+wait 5
+swap boss_big bird
+wait 5
+show bird
+background 46
+fx bird flow 12 12 12
+wait 5
+glue bird flash
+background 15
+move bird 190 90 5
+while bird
+swap bird bird_small
+set bottle 240 130
+background 02frame1.pic 0 0
+move bottle 170 240 6
+se 8;падение вниз
+hide flash
+fx bird_small walk 0 10 15
+text 51 80; bird THNAK U
+move bird_small 170 55 2
+while bird_small
+wait 30
+
+;идут и скроллируется план
+render
+clear
+background 02_bg2pl.pic -1 0
+set 1plan1 0 0
+set 1plan2 320 0
+set p_walk 115 65
+set bird 217 10
+fx bird walk 0 5 8
+set k_walk -89 50
+fx p_walk walk 0 5 8
+fx k_walk walk 0 2 6
+move 1plan1 -320 0 5
+move 1plan2 0 0 5
+text 51 81; bird follow me
+render
+wait 50
+move bird 270 -120 10
+while 1plan2
+
+;дошли до поля... капля
+render
+clear
+background 03frame3.pic 0 0
+render
+wait 5
+se 13
+set kaplya 129 104
+text 200 82;Плюша
+wait 10
+se 13
+set kaplya2 79 92
+wait 40
+hide kaplya
+wait 100
+q
